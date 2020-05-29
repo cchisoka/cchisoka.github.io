@@ -48,7 +48,7 @@
 
 
 <p>取消特定域名的代理</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">git config --global --unset http.[url].proxy</span><br><span class="line">~</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">git config --global --unset http.[url].proxy</span><br></pre></td></tr></table></figure>
 
 <h4 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h4><p>更改~/.gitconfig文件</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vi ~&#x2F;.gitconfig</span><br></pre></td></tr></table></figure>
