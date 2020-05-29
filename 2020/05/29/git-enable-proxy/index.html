@@ -20,19 +20,19 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"8.0.0-rc.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="配置打开配置文件1[root@localhost ~]# vi &#x2F;etc&#x2F;sysconfig&#x2F;iptables">
+  <meta name="description" content="github使用很慢，我们可以通过配置代理来提速，这里我们讲讲如何配置代理。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux （CentOS6.5 配置防火墙 开放指定端口）">
-<meta property="og:url" content="http://yoursite.com/2020/05/14/centos6.5-firewall-setting/index.html">
+<meta property="og:title" content="git如何设置代理">
+<meta property="og:url" content="http://yoursite.com/2020/05/29/git-enable-proxy/index.html">
 <meta property="og:site_name" content="cchisoka&#39;s blog">
-<meta property="og:description" content="配置打开配置文件1[root@localhost ~]# vi &#x2F;etc&#x2F;sysconfig&#x2F;iptables">
-<meta property="article:published_time" content="2020-05-14T07:23:26.000Z">
-<meta property="article:modified_time" content="2020-05-26T10:05:51.827Z">
+<meta property="og:description" content="github使用很慢，我们可以通过配置代理来提速，这里我们讲讲如何配置代理。">
+<meta property="article:published_time" content="2020-05-29T02:47:53.000Z">
+<meta property="article:modified_time" content="2020-05-29T03:44:15.272Z">
 <meta property="article:author" content="cchisoka">
-<meta property="article:tag" content="防火墙">
+<meta property="article:tag" content="proxy">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/2020/05/14/centos6.5-firewall-setting/">
+<link rel="canonical" href="http://yoursite.com/2020/05/29/git-enable-proxy/">
 
 
 <script id="page-configurations">
@@ -45,7 +45,7 @@
   };
 </script>
 
-  <title>Linux （CentOS6.5 配置防火墙 开放指定端口） | cchisoka's blog</title>
+  <title>git如何设置代理 | cchisoka's blog</title>
   
 
 
@@ -188,7 +188,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/14/centos6.5-firewall-setting/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/29/git-enable-proxy/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/img/avatar.png">
@@ -201,7 +201,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Linux （CentOS6.5 配置防火墙 开放指定端口）
+          git如何设置代理
         </h1>
 
         <div class="post-meta">
@@ -210,28 +210,22 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2020-05-14 15:23:26" itemprop="dateCreated datePublished" datetime="2020-05-14T15:23:26+08:00">2020-05-14</time>
+              <time title="创建时间：2020-05-29 10:47:53 / 修改时间：11:44:15" itemprop="dateCreated datePublished" datetime="2020-05-29T10:47:53+08:00">2020-05-29</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-26 18:05:51" itemprop="dateModified" datetime="2020-05-26T18:05:51+08:00">2020-05-26</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/centos/" itemprop="url" rel="index"><span itemprop="name">centos</span></a>
+                  <a href="/categories/git/" itemprop="url" rel="index"><span itemprop="name">git</span></a>
                 </span>
             </span>
 
           
-            <span id="/2020/05/14/centos6.5-firewall-setting/" class="post-meta-item leancloud_visitors" data-flag-title="Linux （CentOS6.5 配置防火墙 开放指定端口）" title="热度">
+            <span id="/2020/05/29/git-enable-proxy/" class="post-meta-item leancloud_visitors" data-flag-title="git如何设置代理" title="热度">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -247,8 +241,8 @@
       </span>
       <span class="post-meta-item-text">评论数：</span>
     
-    <a title="valine" href="/2020/05/14/centos6.5-firewall-setting/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/05/14/centos6.5-firewall-setting/" itemprop="commentCount"></span>
+    <a title="valine" href="/2020/05/29/git-enable-proxy/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/05/29/git-enable-proxy/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -263,22 +257,32 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><h4 id="打开配置文件"><a href="#打开配置文件" class="headerlink" title="打开配置文件"></a>打开配置文件</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# vi &#x2F;etc&#x2F;sysconfig&#x2F;iptables</span><br></pre></td></tr></table></figure>
-
+        <p>github使用很慢，我们可以通过配置代理来提速，这里我们讲讲如何配置代理。</p>
 <a id="more"></a>
 
-<h4 id="配置文件的内容"><a href="#配置文件的内容" class="headerlink" title="配置文件的内容"></a>配置文件的内容</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># Firewall configuration written by system-config-firewall   </span><br><span class="line"># Manual customization of this file is not recommended.   </span><br><span class="line">*filter   </span><br><span class="line">:INPUT ACCEPT [0:0]   </span><br><span class="line">:FORWARD ACCEPT [0:0]   </span><br><span class="line">:OUTPUT ACCEPT [0:0]   </span><br><span class="line">-A INPUT -m state –state ESTABLISHED,RELATED -j ACCEPT   </span><br><span class="line">-A INPUT -p icmp -j ACCEPT   </span><br><span class="line">-A INPUT -i lo -j ACCEPT   </span><br><span class="line">-A INPUT -m state –state NEW -m tcp -p tcp –dport 22 -j ACCEPT   </span><br><span class="line">-A INPUT -m state –state NEW -m tcp -p tcp –dport 80 -j ACCEPT  </span><br><span class="line">-A INPUT -j REJECT –reject-with icmp-host-prohibited   </span><br><span class="line">-A FORWARD -j REJECT –reject-with icmp-host-prohibited   </span><br><span class="line">COMMIT</span><br></pre></td></tr></table></figure>
+<h3 id="使用https协议连接git仓库的代理方法"><a href="#使用https协议连接git仓库的代理方法" class="headerlink" title="使用https协议连接git仓库的代理方法"></a>使用https协议连接git仓库的代理方法</h3><h4 id="git设置全局代理"><a href="#git设置全局代理" class="headerlink" title="git设置全局代理"></a>git设置全局代理</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config –-global http.proxy [protocol]:&#x2F;&#x2F;127.0.0.1:[port]</span><br></pre></td></tr></table></figure>
+<p>注意： –global指的是修改Git全局配置文件~/.gitconfig，protocol指的是代理使用的协议，如http、https、socks5等，<br>port指的是代理使用的端口号</p>
+<p>查看配置是否成功</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config -l &#x2F;&#x2F;查看git配置信息</span><br></pre></td></tr></table></figure>
 
 
-<h4 id="开启指定端口"><a href="#开启指定端口" class="headerlink" title="开启指定端口"></a>开启指定端口</h4><p>端口行配置处新起一行写入下面代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-A INPUT -m state –state NEW -m tcp -p tcp –dport 8080 -j ACCEPT</span><br></pre></td></tr></table></figure>
+<h4 id="git-针对特定域名使用代理"><a href="#git-针对特定域名使用代理" class="headerlink" title="git 针对特定域名使用代理"></a>git 针对特定域名使用代理</h4><p>配置全局代理后，git连接网络都会使用代理，这时候如果git有使用gitee和自己搭建的git服务，速度则会受影响。<br>所有一般针对特定域名使用代理</p>
+<p>针对特定域名开启代理</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config –-global http.[url].proxy [protocol]:&#x2F;&#x2F;127.0.0.1:[port]</span><br></pre></td></tr></table></figure>
+<p>注意：这里的url指的开启代理的域名，如<a href="https://github.com" target="_blank" rel="noopener">https://github.com</a></p>
+<h3 id="取消代理"><a href="#取消代理" class="headerlink" title="取消代理"></a>取消代理</h3><h4 id="命令行方式"><a href="#命令行方式" class="headerlink" title="命令行方式"></a>命令行方式</h4><p>取消全局代理</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global --unset http.proxy</span><br></pre></td></tr></table></figure>
 
-<h4 id="重启防火墙"><a href="#重启防火墙" class="headerlink" title="重启防火墙"></a>重启防火墙</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# &#x2F;etc&#x2F;init.d&#x2F;iptables restart</span><br></pre></td></tr></table></figure>
 
-<h3 id="防火墙其它命令"><a href="#防火墙其它命令" class="headerlink" title="防火墙其它命令"></a>防火墙其它命令</h3><h4 id="查看开放的端口"><a href="#查看开放的端口" class="headerlink" title="查看开放的端口"></a>查看开放的端口</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# &#x2F;etc&#x2F;init.d&#x2F;iptables status</span><br></pre></td></tr></table></figure>
+<p>取消特定域名的代理</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">git config --global --unset http.[url].proxy</span><br><span class="line">~</span><br></pre></td></tr></table></figure>
 
-<h4 id="关闭防火墙"><a href="#关闭防火墙" class="headerlink" title="关闭防火墙"></a>关闭防火墙</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# &#x2F;etc&#x2F;init.d&#x2F;iptables stop</span><br></pre></td></tr></table></figure>
+<p>####<br>更改~/.gitconfig文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi ~&#x2F;.gitconfig</span><br></pre></td></tr></table></figure>
+<p>将对应的代理配置信息删除</p>
+<h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;开启全局代理</span><br><span class="line">git config –-global http.proxy http:&#x2F;&#x2F;127.0.0.1:1080</span><br><span class="line">&#x2F;&#x2F;取消全局代理</span><br><span class="line">git config --global --unset http.proxy</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;只针对https:&#x2F;&#x2F;github.com使用代理</span><br><span class="line">git config --global http.https:&#x2F;&#x2F;github.com.proxy http:&#x2F;&#x2F;127.0.0.1:1080</span><br><span class="line">&#x2F;&#x2F;取消针对github的代理</span><br><span class="line">git config --global --unset http.https:&#x2F;&#x2F;github.com.proxy</span><br></pre></td></tr></table></figure>
 
+<p>参考链接：<a href="https://ericclose.github.io/git-proxy-config.html" target="_blank" rel="noopener">一文让你了解如何为 Git 设置代理</a></p>
 
     </div>
 
@@ -288,7 +292,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E9%98%B2%E7%81%AB%E5%A2%99/" rel="tag"># 防火墙</a>
+              <a href="/tags/proxy/" rel="tag"># proxy</a>
           </div>
 
         
@@ -296,11 +300,11 @@
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/2020/05/29/git-enable-proxy/" rel="next" title="git如何设置代理">
-      git如何设置代理 <i class="fa fa-chevron-right"></i>
+    <a href="/2020/05/14/centos6.5-firewall-setting/" rel="prev" title="Linux （CentOS6.5 配置防火墙 开放指定端口）">
+      <i class="fa fa-chevron-left"></i> Linux （CentOS6.5 配置防火墙 开放指定端口）
     </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -360,7 +364,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#配置"><span class="nav-number">1.</span> <span class="nav-text">配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#打开配置文件"><span class="nav-number">1.1.</span> <span class="nav-text">打开配置文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置文件的内容"><span class="nav-number">1.2.</span> <span class="nav-text">配置文件的内容</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#开启指定端口"><span class="nav-number">1.3.</span> <span class="nav-text">开启指定端口</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#重启防火墙"><span class="nav-number">1.4.</span> <span class="nav-text">重启防火墙</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#防火墙其它命令"><span class="nav-number">2.</span> <span class="nav-text">防火墙其它命令</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#查看开放的端口"><span class="nav-number">2.1.</span> <span class="nav-text">查看开放的端口</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关闭防火墙"><span class="nav-number">2.2.</span> <span class="nav-text">关闭防火墙</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用https协议连接git仓库的代理方法"><span class="nav-number">1.</span> <span class="nav-text">使用https协议连接git仓库的代理方法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#git设置全局代理"><span class="nav-number">1.1.</span> <span class="nav-text">git设置全局代理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#git-针对特定域名使用代理"><span class="nav-number">1.2.</span> <span class="nav-text">git 针对特定域名使用代理</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#取消代理"><span class="nav-number">2.</span> <span class="nav-text">取消代理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#命令行方式"><span class="nav-number">2.1.</span> <span class="nav-text">命令行方式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#例子"><span class="nav-number">3.</span> <span class="nav-text">例子</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
