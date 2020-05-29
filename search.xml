@@ -50,7 +50,7 @@
 <p>取消特定域名的代理</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">git config --global --unset http.[url].proxy</span><br><span class="line">~</span><br></pre></td></tr></table></figure>
 
-<p>####<br>更改~/.gitconfig文件</p>
+<h4 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h4><p>更改~/.gitconfig文件</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vi ~&#x2F;.gitconfig</span><br></pre></td></tr></table></figure>
 <p>将对应的代理配置信息删除</p>
 <h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;开启全局代理</span><br><span class="line">git config –-global http.proxy http:&#x2F;&#x2F;127.0.0.1:1080</span><br><span class="line">&#x2F;&#x2F;取消全局代理</span><br><span class="line">git config --global --unset http.proxy</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;只针对https:&#x2F;&#x2F;github.com使用代理</span><br><span class="line">git config --global http.https:&#x2F;&#x2F;github.com.proxy http:&#x2F;&#x2F;127.0.0.1:1080</span><br><span class="line">&#x2F;&#x2F;取消针对github的代理</span><br><span class="line">git config --global --unset http.https:&#x2F;&#x2F;github.com.proxy</span><br></pre></td></tr></table></figure>
