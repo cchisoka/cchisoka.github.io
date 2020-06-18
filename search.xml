@@ -5,29 +5,32 @@
     <url>/2020/05/29/git-enable-proxy/</url>
     <content><![CDATA[<p>github使用很慢，我们可以通过配置代理来提速，这里我们讲讲如何配置代理。</p>
 <a id="more"></a>
-
-<h3 id="使用https协议连接git仓库的代理方法"><a href="#使用https协议连接git仓库的代理方法" class="headerlink" title="使用https协议连接git仓库的代理方法"></a>使用https协议连接git仓库的代理方法</h3><h4 id="git设置全局代理"><a href="#git设置全局代理" class="headerlink" title="git设置全局代理"></a>git设置全局代理</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git config –-global http.proxy [protocol]:&#x2F;&#x2F;127.0.0.1:[port]</span><br></pre></td></tr></table></figure>
-<p>注意： –global指的是修改Git全局配置文件~/.gitconfig，protocol指的是代理使用的协议，如http、https、socks5等，<br>port指的是代理使用的端口号</p>
+<h3 id="使用https协议连接git仓库的代理方法"><a class="header-anchor" href="#使用https协议连接git仓库的代理方法">¶</a>使用https协议连接git仓库的代理方法</h3>
+<h4 id="git设置全局代理"><a class="header-anchor" href="#git设置全局代理">¶</a>git设置全局代理</h4>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git config –-global http.proxy [protocol]:&#x2F;&#x2F;127.0.0.1:[port]</span><br></pre></td></tr></table></figure>
+<p>注意： --global指的是修改Git全局配置文件~/.gitconfig，protocol指的是代理使用的协议，如http、https、socks5等，<br>
+port指的是代理使用的端口号</p>
 <p>查看配置是否成功</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git config -l &#x2F;&#x2F;查看git配置信息</span><br></pre></td></tr></table></figure>
-
-
-<h4 id="git-针对特定域名使用代理"><a href="#git-针对特定域名使用代理" class="headerlink" title="git 针对特定域名使用代理"></a>git 针对特定域名使用代理</h4><p>配置全局代理后，git连接网络都会使用代理，这时候如果git有使用gitee和自己搭建的git服务，速度则会受影响。<br>所有一般针对特定域名使用代理</p>
+<h4 id="git-针对特定域名使用代理"><a class="header-anchor" href="#git-针对特定域名使用代理">¶</a>git 针对特定域名使用代理</h4>
+<p>配置全局代理后，git连接网络都会使用代理，这时候如果git有使用gitee和自己搭建的git服务，速度则会受影响。<br>
+所有一般针对特定域名使用代理</p>
 <p>针对特定域名开启代理</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git config –-global http.[url].proxy [protocol]:&#x2F;&#x2F;127.0.0.1:[port]</span><br></pre></td></tr></table></figure>
-<p>注意：这里的url指的开启代理的域名，如<a href="https://github.com" target="_blank" rel="noopener">https://github.com</a></p>
-<h3 id="取消代理"><a href="#取消代理" class="headerlink" title="取消代理"></a>取消代理</h3><h4 id="命令行方式"><a href="#命令行方式" class="headerlink" title="命令行方式"></a>命令行方式</h4><p>取消全局代理</p>
+<p>注意：这里的url指的开启代理的域名，如https://github.com</p>
+<h3 id="取消代理"><a class="header-anchor" href="#取消代理">¶</a>取消代理</h3>
+<h4 id="命令行方式"><a class="header-anchor" href="#命令行方式">¶</a>命令行方式</h4>
+<p>取消全局代理</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git config --global --unset http.proxy</span><br></pre></td></tr></table></figure>
-
-
 <p>取消特定域名的代理</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">git config --global --unset http.[url].proxy</span><br></pre></td></tr></table></figure>
-
-<h4 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h4><p>更改~/.gitconfig文件</p>
+<h4 id="修改配置文件"><a class="header-anchor" href="#修改配置文件">¶</a>修改配置文件</h4>
+<p>更改~/.gitconfig文件</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vi ~&#x2F;.gitconfig</span><br></pre></td></tr></table></figure>
 <p>将对应的代理配置信息删除</p>
-<h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;开启全局代理</span><br><span class="line">git config –-global http.proxy http:&#x2F;&#x2F;127.0.0.1:1080</span><br><span class="line">&#x2F;&#x2F;取消全局代理</span><br><span class="line">git config --global --unset http.proxy</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;只针对https:&#x2F;&#x2F;github.com使用代理</span><br><span class="line">git config --global http.https:&#x2F;&#x2F;github.com.proxy http:&#x2F;&#x2F;127.0.0.1:1080</span><br><span class="line">&#x2F;&#x2F;取消针对github的代理</span><br><span class="line">git config --global --unset http.https:&#x2F;&#x2F;github.com.proxy</span><br></pre></td></tr></table></figure>
-
+<h3 id="例子"><a class="header-anchor" href="#例子">¶</a>例子</h3>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;开启全局代理</span><br><span class="line">git config –-global http.proxy http:&#x2F;&#x2F;127.0.0.1:1080</span><br><span class="line">&#x2F;&#x2F;取消全局代理</span><br><span class="line">git config --global --unset http.proxy</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;只针对https:&#x2F;&#x2F;github.com使用代理</span><br><span class="line">git config --global http.https:&#x2F;&#x2F;github.com.proxy http:&#x2F;&#x2F;127.0.0.1:1080</span><br><span class="line">&#x2F;&#x2F;取消针对github的代理</span><br><span class="line">git config --global --unset http.https:&#x2F;&#x2F;github.com.proxy</span><br></pre></td></tr></table></figure>
+<p>是不是很简单呀 ☺️</p>
 <p>参考链接：<a href="https://ericclose.github.io/git-proxy-config.html" target="_blank" rel="noopener">一文让你了解如何为 Git 设置代理</a></p>
 ]]></content>
       <categories>
