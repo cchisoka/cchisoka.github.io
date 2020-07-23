@@ -58,8 +58,9 @@ port指的是代理使用的端口号</p>
 <h3 id="例子"><a class="header-anchor" href="#例子">¶</a>例子</h3>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;开启全局代理</span><br><span class="line">git config –-global http.proxy http:&#x2F;&#x2F;127.0.0.1:1080</span><br><span class="line">&#x2F;&#x2F;取消全局代理</span><br><span class="line">git config --global --unset http.proxy</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;只针对https:&#x2F;&#x2F;github.com使用代理</span><br><span class="line">git config --global http.https:&#x2F;&#x2F;github.com.proxy http:&#x2F;&#x2F;127.0.0.1:1080</span><br><span class="line">&#x2F;&#x2F;取消针对github的代理</span><br><span class="line">git config --global --unset http.https:&#x2F;&#x2F;github.com.proxy</span><br></pre></td></tr></table></figure>
 <p>是不是很简单呀 ☺️</p>
-<p><img src="https://gitee.com/nowifi/ImgBed/raw/master/NotesImg/8c85-irtymmv5597576.gif" alt="8c85-irtymmv5597576"><br>
-参考链接：<a href="https://ericclose.github.io/git-proxy-config.html" target="_blank" rel="noopener">一文让你了解如何为 Git 设置代理</a></p>
+<p><img src="https://gitee.com/nowifi/ImgBed/raw/master/NotesImg/8c85-irtymmv5597576.gif" alt="8c85-irtymmv5597576"></p>
+<p><img src="https://gitee.com/nowifi/ImgBed/raw/master/NotesImg/image-20200723123053670.png" alt="image-20200723123053670"></p>
+<p>参考链接：<a href="https://ericclose.github.io/git-proxy-config.html" target="_blank" rel="noopener">一文让你了解如何为 Git 设置代理</a></p>
 ]]></content>
       <categories>
         <category>git</category>
